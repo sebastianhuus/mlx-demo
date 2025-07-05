@@ -1,7 +1,8 @@
 from mlx_lm.utils import load
 from mlx_lm.generate import generate
 
-# enum for models, using gemma 3 1b up to 27b
+# enum for models, using gemma 3 4 up to 27b
+# note: 1b is not available as a text model and will generate slop
 from enum import Enum
 class GemmaModels(Enum):
     GEMMA_3_4B_IT_4BIT = "mlx-community/gemma-3-text-4b-it-4bit" # context windows 128k
